@@ -8,11 +8,18 @@ html { box-sizing: border-box; }
 body {
     margin: 0;
     font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+
 }
+
+
 
 h2 {
     margin: 0;
     font-family: 'Raleway', sans-serif;
+    position: absolute;
+    font-weight: 800;
+
 }
 
 .paticka {
@@ -40,3 +47,85 @@ notebook/pc:
 */
 
 /* tvoje styly sem */
+
+.pozadi {
+    position: relative;
+    display: inline-block;
+}
+
+.recept-komentare {
+    position: absolute;
+    right: 5%;
+    top: 5%;
+}
+
+.recept-kategorie {
+    position: absolute;
+    left: 5%;
+    top: 5%;
+}
+
+.recept-nazev {
+    position: absolute;
+    left: 5%;
+    bottom: 5%;
+}
+
+.sloupec {
+    display: inline-block;
+    }
+
+.hlavni-recept {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 480px) {
+
+    
+
+    h2.hlavni-recept {
+        font-size: 36px;
+    }
+
+    h2.sloupec {
+        font-size: 22px;
+    }
+
+    .sloupec {
+       display: inline;
+    }
+
+    
+}
+
+@img (min-width: 860px) {
+
+    .foto {
+        width: 33.33333%;
+    }
+}
+
+
+@img (min-width: 800px) {
+
+    .foto {
+        width: 25%;
+    }
+}
+
+
+@img (min-width: 1000px) {
+
+    .foto {
+        width: 16.66667%;
+    }
+}
