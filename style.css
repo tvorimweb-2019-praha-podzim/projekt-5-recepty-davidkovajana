@@ -9,6 +9,8 @@ body {
     margin: 0;
     font-family: 'Source Sans Pro', sans-serif;
     color: white;
+    font-size: 14px;
+    font-weight: 400;
 
 }
 
@@ -50,41 +52,64 @@ notebook/pc:
 
 .pozadi {
     position: relative;
-    display: inline-block;
+    display: flex;
 }
 
 .recept-komentare {
     position: absolute;
     right: 5%;
-    top: 5%;
+    top: 10%;
 }
 
 .recept-kategorie {
     position: absolute;
     left: 5%;
-    top: 5%;
+    top: 10%;
 }
 
 .recept-nazev {
     position: absolute;
     left: 5%;
+    bottom: 10%;   
+}
+
+.recept-nazev2 {
+    position: absolute;
+    left: 5%;
     bottom: 5%;
 }
 
-.sloupec {
-    display: inline-block;
-    }
+img {
+    max-width: 100%;
+    border: 0.5px solid white;
+}
 
 .hlavni-recept {
+    float: left;
+    object-fit: cover;
+}
+
+.burgerfoto {
+    float: left;
+    object-fit: cover;
+    max-height: 250px;
     width: 100%;
 }
 
+.sushifoto, .rajcatafoto, .kurefoto, .grilovanifoto {
+    float: left;
+    object-fit: cover;
+    max-height: 90px;
+    width: 100%;
+}
 
+.recept-nazev {
+    font-size: 18px;
+}
 
-
-
-
-
+.recept-nazev2 {
+    font-size: 28px;
+}
 
 
 
@@ -92,40 +117,72 @@ notebook/pc:
 
     
 
-    h2.hlavni-recept {
+   .sloupec {
+        width: 50%;
+        float: left;       
+   }
+
+   .burgerfoto {
+        float: left;
+        object-fit: cover;
+        max-height: 250px;
+        width: 100%;
+    }
+
+    .sushifoto, .rajcatafoto, .kurefoto, .grilovanifoto {
+        float: left;
+        object-fit: cover;
+        max-height: 150px;
+        width: 100%;
+    }
+
+   .recept-nazev {
+        font-size: 22px;    
+    }   
+
+    .recept-nazev2 {
         font-size: 36px;
     }
+    
+}
 
-    h2.sloupec {
-        font-size: 22px;
+@media (min-width: 860px) {
+
+   .sloupec {
+       width: 33.33333%;
+       float: right;
+   }
+
+   .burger {
+        width: 33.33333%;
+        float: left;
     }
 
-    .sloupec {
-       display: inline;
+   .burgerfoto {
+       min-height: 400px;
+   }
+
+   .sushifoto, .rajcatafoto, .kurefoto, .grilovanifoto {
+        float: left;
+        object-fit: cover;
+        min-height: 200px;
+        width: 100%;
+    }
+
+
+    .doporucujeme {
+        display: flex;
+    }
+
+
+    .recept-nazev {
+        font-size: 28px;
+    }
+    
+    .recept-nazev2 {
+        font-size: 48px;
     }
 
     
 }
 
-@img (min-width: 860px) {
-
-    .foto {
-        width: 33.33333%;
-    }
-}
-
-
-@img (min-width: 800px) {
-
-    .foto {
-        width: 25%;
-    }
-}
-
-
-@img (min-width: 1000px) {
-
-    .foto {
-        width: 16.66667%;
-    }
-}
